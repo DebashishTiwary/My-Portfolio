@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Creative Tech Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Creative Tech Portfolio</h1>
+      <label class="switch">
+        <input type="checkbox" id="toggleTheme" />
+        <span class="slider"></span>
+        <span>Dark Mode</span>
+      </label>
+    </header>
+
+    <section id="books">
+      <h2>📚 Books</h2>
+      <input type="text" id="bookInput" placeholder="Add a new book title..." />
+      <input type="file" id="bookFile" accept=".pdf,.doc,.docx,.ppt,.pptx" />
+      <button onclick="addBook()">Add Book</button>
+      <ul id="bookList"></ul>
+    </section>
+
+    <section id="research">
+      <h2>🧪 Research</h2>
+      <input type="text" id="researchInput" placeholder="Add a research topic..." />
+      <input type="file" id="researchFile" accept=".pdf,.doc,.docx,.ppt,.pptx" />
+      <button onclick="addResearch()">Add Research</button>
+      <ul id="researchList"></ul>
+    </section>
+
+    <section id="resume">
+      <h2>📄 Resume</h2>
+      <a href="resume.pdf" download>Download My Resume</a>
+    </section>
+  </div>
+</body>
+</html>
